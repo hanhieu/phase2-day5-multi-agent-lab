@@ -1,0 +1,60 @@
+[
+  {
+    "name": "supervisor_route",
+    "payload": {
+      "next": "researcher",
+      "iteration": 1
+    }
+  },
+  {
+    "name": "researcher_search",
+    "payload": {
+      "num_sources": 5
+    }
+  },
+  {
+    "name": "researcher_notes",
+    "payload": {
+      "input_tokens": 1266,
+      "output_tokens": 751,
+      "cost_usd": 0.0006405
+    }
+  },
+  {
+    "name": "supervisor_route",
+    "payload": {
+      "next": "analyst",
+      "iteration": 2
+    }
+  },
+  {
+    "name": "analyst_notes",
+    "payload": {
+      "input_tokens": 880,
+      "output_tokens": 476,
+      "cost_usd": 0.00041759999999999996
+    }
+  },
+  {
+    "name": "supervisor_route",
+    "payload": {
+      "next": "writer",
+      "iteration": 3
+    }
+  },
+  {
+    "name": "writer_answer",
+    "payload": {
+      "input_tokens": 1512,
+      "output_tokens": 982,
+      "cost_usd": 0.0008159999999999999
+    }
+  },
+  {
+    "name": "supervisor_route",
+    "payload": {
+      "next": "done",
+      "iteration": 4
+    }
+  }
+]

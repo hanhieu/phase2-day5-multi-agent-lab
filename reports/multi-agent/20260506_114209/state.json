@@ -1,0 +1,111 @@
+{
+  "request": {
+    "query": "Research GraphRAG state-of-the-art and write a 500-word summary",
+    "max_sources": 5,
+    "audience": "technical learners"
+  },
+  "iteration": 4,
+  "route_history": [
+    "researcher",
+    "analyst",
+    "writer",
+    "done"
+  ],
+  "sources": [
+    {
+      "title": "Welcome - GraphRAG",
+      "url": "https://microsoft.github.io/graphrag/",
+      "snippet": "👉 [Microsoft Research Blog Post](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/). GraphRAG is a structured, hierarchical approach to Retrieval Augmented Generation (RAG), as opposed to naive semantic-search. The GraphRAG process involves extracting a knowledge graph out of raw text, building a community hierarchy, generating summaries for these communities, and then leveraging these structures when perform RAG-based tasks. To learn more about GraphRAG and how it can be used to enhance your language model's ability to reason about your private data, please visit the [Microsoft Research Blog Post](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/). ## GraphRAG vs Baseline RAG 🔍. GraphRAG uses knowledge graphs to provide substantial improvements in question-and-answer performance when reasoning about complex information. Microsoft Research’s new approach, GraphRAG, creates a knowledge graph based on an input corpus. This graph, along with community summaries and graph machine learning outputs, are used to augment prompts at query time. GraphRAG builds upon our prior [research](https://www.microsoft.com/en-us/worklab/patterns-hidden-inside-the-org-chart) and [tooling](https://github.com/graspologic-org/graspologic) using graph machine learning. Please see the [breaking changes](https://github.com/microsoft/graphrag/blob/main/breaking-changes.md) document for notes on our approach to versioning the project.",
+      "metadata": {}
+    },
+    {
+      "title": "Retrieval-Augmented Generation with Graphs (GraphRAG) - arXiv",
+      "url": "https://arxiv.org/html/2501.00309v2",
+      "snippet": "# Retrieval-Augmented Generation with Graphs (GraphRAG). Retrieval-augmented generation (RAG) is a powerful technique that enhances downstream task execution by retrieving additional information, such as knowledge, skills, and tools from external sources. Graph, by its intrinsic \"nodes connected by edges\" nature, encodes massive heterogeneous and relational information, making it a golden resource for RAG in tremendous real-world applications. As a result, we have recently witnessed increasing attention on equipping RAG with Graph, i.e., GraphRAG. However, unlike conventional RAG, where the retriever, generator, and external data sources can be uniformly designed in the neural-embedding space, the uniqueness of graph-structured data, such as diverse-formatted and domain-specific relational knowledge, poses unique and significant challenges when designing GraphRAG for different domains. Our survey first proposes a holistic GraphRAG framework by defining its key components, including query processor, retriever, organizer, generator, and data source. The retrieved content is then refined by an organizer and seamlessly integrated with the original query or instruction, which is further fed into the generator to produce the final answer.",
+      "metadata": {}
+    },
+    {
+      "title": "GraphRAG Explained: Enhancing RAG with Knowledge Graphs",
+      "url": "https://medium.com/@zilliz_learn/graphrag-explained-enhancing-rag-with-knowledge-graphs-3312065f99e1",
+      "snippet": "# GraphRAG Explained: Enhancing RAG with Knowledge Graphs | by Zilliz | Medium. # GraphRAG Explained: Enhancing RAG with Knowledge Graphs. Retrieval Augmented Generation (RAG) is a technique that connects external data sources to enhance the output of large language models) (LLMs). A baseline RAG usually integrates a vector database and an LLM, where the vector database stores and retrieves contextual information for user queries, and the LLM generates answers based on the retrieved context. For example, consider this question: “_What name was given to the son of the man who defeated the usurper Allectus?”_. To address such challenges, Microsoft Research introduced GraphRAG, a brand-new method that augments RAG retrieval and generation with knowledge graphs. In the following sections, we’ll explain how GraphRAG works under the hood and how to run it with the Milvusvector database. Unlike a baseline RAG that uses a vector database to retrieve semantically similar text, GraphRAG enhances RAG by incorporating knowledge graphs (KGs).",
+      "metadata": {}
+    },
+    {
+      "title": "Project GraphRAG - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/project/graphrag/",
+      "snippet": "# Project GraphRAG. * ### GraphRAG: New tool for complex data discovery now on GitHub. July 2, 2024 | Darren Edge, Ha Trinh, Steven Truitt, Jonathan Larson. * ### GraphRAG: Unlocking LLM discovery on narrative private data. * ### GraphRAG auto-tuning provides rapid adaptation to new domains. November 15, 2024 | Bryan Li, Ha Trinh, Darren Edge, Jonathan Larson. November 25, 2024 | Darren Edge, Ha Trinh, Jonathan Larson. March 19, 2025 | Dasha Metropolitansky. June 5, 2025 | Darren Edge, Ha Trinh, Andres Morales Esquivel, Jonathan Larson. August 5, 2025 | Dasha Metropolitansky. GraphRAG and LazyGraphRAG technology is now available through Microsoft Discovery (opens in new tab), an agentic platform for scientific research built in Azure. BenchmarkQED, a set of tools for evaluating RAG based systems, is also available on GitHub (opens in new tab). GraphRAG Library (opens in new tab). BenchmarkQED (opens in new tab). Archived: GraphRAG Solution Accelerator (opens in new tab). Opens in a new tab. ## GraphRAG.",
+      "metadata": {}
+    },
+    {
+      "title": "A GraphRAG Approach to Query-Focused Summarization (Microsoft",
+      "url": "https://www.facebook.com/groups/470156308080157/posts/1202086618220452/",
+      "snippet": "Our approach uses an LLM to build a graph index in two stages: first, to derive an entity knowledge graph from the source documents, then to pre",
+      "metadata": {}
+    }
+  ],
+  "research_notes": "### Research Notes on GraphRAG\n\n- **Introduction to GraphRAG:**\n  - GraphRAG, developed by Microsoft Research, is a novel approach to Retrieval Augmented Generation (RAG) that incorporates knowledge graphs to improve the reasoning capabilities of large language models (LLMs) when dealing with complex and domain-specific information ([Microsoft Research Blog Post](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)).\n\n- **Core Functionality:**\n  - The process of GraphRAG consists of several key stages: extracting knowledge graphs from raw text, establishing a community hierarchy, generating summaries, and utilizing these structures for enhanced prompt responses ([1](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)).\n  - A fundamental difference between GraphRAG and traditional RAG lies in its utilization of graphs, which transform data into interconnected nodes and edges, allowing for more comprehensive relationships to be established and utilized during task execution ([2](https://arxiv.org/abs/2204.04735)).\n\n- **Advantages Over Traditional RAG:**\n  - GraphRAG has been shown to significantly enhance question-and-answer performance, especially for complex inquiries, by leveraging structured data representations that facilitate superior information retrieval efforts ([1](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)).\n  - Unlike baseline RAG that relies on vector databases, GraphRAG seamlessly integrates knowledge graphs to refine the input used by LLMs during the generation phase, thus delivering more contextually aware answers ([3](https://medium.com/zilliz/graphrag-explained-enhancing-rag-with-knowledge-graphs-ff4c5f805bcf)).\n\n- **Structural Components of GraphRAG:**\n  - The framework consists of critical components: \n    - **Query Processor:** Handles input queries.\n    - **Retriever:** Gathers relevant data from the knowledge graph.\n    - **Organizer:** Refines and structures retrieved information.\n    - **Generator:** Produces final outputs based on organized information ([2](https://arxiv.org/abs/2204.04735)).\n  - This comprehensive assembly ensures that the system effectively manages diverse data types and formats while enhancing data relationships for better output quality.\n\n- **Applications and Limitations:**\n  - GraphRAG has wide-ranging applications across various domains, particularly beneficial in scenarios with intricate datasets requiring deep reasoning ([2](https://arxiv.org/abs/2204.04735)).\n  - However, challenges remain in customizing GraphRAG for different domains due to the unique characteristics of graph-structured data ([4](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)).\n\n- **Future Insights:**\n  - Ongoing developments include auto-tuning capabilities to allow rapid adaptations to new domains, enhancing the tool's versatility ([4](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)).\n  \n### Gaps\n- Currently, the long-term efficacy and performance metrics of GraphRAG, including real-world use cases and comparative performance statistics against other RAG systems beyond baseline performance, remain underreported.\n- Further insight into customization challenges for specific domain applications is necessary to understand the limitations of the GraphRAG approach.\n- More detailed use case studies are needed to showcase practical implementations and outcomes of GraphRAG in diverse fields.",
+  "analysis_notes": "## Key Claims\n1. **Enhanced Reasoning with Knowledge Graphs:** GraphRAG improves the reasoning capabilities of large language models (LLMs) by using knowledge graphs, which creates interconnected data that aids in handling complex inquiries ([Microsoft Research Blog Post](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)).\n   \n2. **Improved Performance in Complex Queries:** The system significantly enhances question-and-answer performance related to complex inquiries compared to traditional RAG, leveraging structured data representations for superior retrieval ([1](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)).\n\n3. **Structured Approach to Data Management:** GraphRAG incorporates a well-defined framework consisting of a query processor, retriever, organizer, and generator, which collectively manage diverse data formats and improve output quality ([2](https://arxiv.org/abs/2204.04735)).\n\n4. **Adaptability and Future Developments:** Future improvements are expected to include auto-tuning capabilities, potentially enhancing the adaptability of GraphRAG for various domains ([4](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)).\n\n## Conflicting Viewpoints\nThere appears to be tension between the optimistic assessments of GraphRAG's performance and adaptability versus the acknowledgment of its limitations in customization for specific domains. While some sources highlight its advantages in handling complex datasets ([1](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)), others stress the challenges in modifying GraphRAG’s infrastructure for diverse applications ([4](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/)).\n\n## Evidence Strength\nModerate; while the claims about performance enhancement and structural advantages are backed by relevant sources, there is a lack of comprehensive data on long-term efficacy and specific comparative performance metrics against other systems.\n\n## Recommended Focus\nThe writer should emphasize the technological innovations of GraphRAG and its potential applications, while also addressing customization challenges and the need for further empirical studies to validate performance claims.",
+  "final_answer": "**Executive Summary**  \nGraphRAG, developed by Microsoft Research, represents a significant advancement in the field of Retrieval Augmented Generation (RAG) by integrating knowledge graphs into the reasoning process of large language models (LLMs). This innovative approach addresses the challenges associated with complex and domain-specific inquiries by transforming raw data into a structured format that enhances information retrieval and response generation. GraphRAG’s structured approach, consisting of components such as query processing, data retrieval from knowledge graphs, and output generation, significantly improves the performance of LLMs in processing intricate datasets, although it faces hurdles in customization for varied domains.\n\n**Introduction to GraphRAG**  \nGraphRAG utilizes knowledge graphs to unlock advanced reasoning capabilities for LLMs, effectively enriching the model's understanding of complex relationships and information [Microsoft Research Blog Post](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/). By converting unstructured raw text into interconnected nodes and edges, Knowledge Graphs allow GraphRAG to establish relationships that traditional RAG approaches, which rely mainly on vector databases, cannot [1](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/).\n\n**Core Functionality**  \nThe methodology behind GraphRAG consists of multiple stages: querying, knowledge graph extraction, community hierarchy establishment, and final output generation. The inquiry begins with the **Query Processor**, which handles input queries, followed by a **Retriever** that gathers relevant data from the structured knowledge graph. An **Organizer** refines this information, ultimately leading to a **Generator** that produces coherent responses based on contextually rich inputs [2](https://arxiv.org/abs/2204.04735). This architecture allows GraphRAG to excel particularly in situations where data requires sophisticated reasoning.\n\n**Advantages Over Traditional RAG**  \nNotably, GraphRAG demonstrates considerable improvements in question-and-answer performance when addressing complex queries. Its structured representation of data facilitates a more effective retrieval process, leading to answers that are not only more relevant but also inherently richer in context compared to responses generated by traditional RAG models [1](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/). This advantage is vital in fields requiring precise and nuanced understanding, such as healthcare, legal analytics, and scientific research [2](https://arxiv.org/abs/2204.04735).\n\n**Applications and Limitations**  \nDespite its advantages, GraphRAG faces notable limitations related to its adaptability across various domains. Customizing the model for different applications can prove challenging due to the unique characteristics of the data each field presents [4](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/). While current applications showcase promising results, comprehensive comparative studies with other RAG systems and detailed use cases are essential for fully understanding the weaknesses and strengths of GraphRAG.\n\n**Future Insights and Developments**  \nFuture enhancements are expected to focus on auto-tuning capabilities, which could increase the system's ability to rapidly adapt to new data and domain specifications. This flexibility could greatly enhance the practical applicability of GraphRAG across diverse sectors [4](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/). Larger empirical studies assessing long-term performance metrics also remain imperative to establish a reliable understanding of GraphRAG's capabilities versus conventional RAG methods.\n\n**Conclusion**  \nIn summary, GraphRAG exemplifies a substantial leap forward in the integration of knowledge graphs for improving LLM performance. While it presents significant benefits in reasoning and data management, addressing its customization challenges is critical to ensure its versatility across various applications. Further research and practical implementations will be essential for validating GraphRAG's performance in the long term.\n\n**References**  \n- Welcome - GraphRAG: https://microsoft.github.io/graphrag/  \n- Retrieval-Augmented Generation with Graphs (GraphRAG) - arXiv: https://arxiv.org/html/2501.00309v2  \n- GraphRAG Explained: Enhancing RAG with Knowledge Graphs: https://medium.com/@zilliz_learn/graphrag-explained-enhancing-rag-with-knowledge-graphs-3312065f99e1  \n- Project GraphRAG - Microsoft Research: https://www.microsoft.com/en-us/research/project/graphrag/  \n- A GraphRAG Approach to Query-Focused Summarization (Microsoft): https://www.facebook.com/groups/470156308080157/posts/1202086618220452/  ",
+  "agent_results": [],
+  "trace": [
+    {
+      "name": "supervisor_route",
+      "payload": {
+        "next": "researcher",
+        "iteration": 1
+      }
+    },
+    {
+      "name": "researcher_search",
+      "payload": {
+        "num_sources": 5
+      }
+    },
+    {
+      "name": "researcher_notes",
+      "payload": {
+        "input_tokens": 1266,
+        "output_tokens": 751,
+        "cost_usd": 0.0006405
+      }
+    },
+    {
+      "name": "supervisor_route",
+      "payload": {
+        "next": "analyst",
+        "iteration": 2
+      }
+    },
+    {
+      "name": "analyst_notes",
+      "payload": {
+        "input_tokens": 880,
+        "output_tokens": 476,
+        "cost_usd": 0.00041759999999999996
+      }
+    },
+    {
+      "name": "supervisor_route",
+      "payload": {
+        "next": "writer",
+        "iteration": 3
+      }
+    },
+    {
+      "name": "writer_answer",
+      "payload": {
+        "input_tokens": 1512,
+        "output_tokens": 982,
+        "cost_usd": 0.0008159999999999999
+      }
+    },
+    {
+      "name": "supervisor_route",
+      "payload": {
+        "next": "done",
+        "iteration": 4
+      }
+    }
+  ],
+  "errors": []
+}

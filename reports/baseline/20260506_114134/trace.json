@@ -1,0 +1,10 @@
+[
+  {
+    "name": "baseline_llm",
+    "payload": {
+      "input_tokens": 63,
+      "output_tokens": 766,
+      "cost_usd": 0.00046904999999999994
+    }
+  }
+]
